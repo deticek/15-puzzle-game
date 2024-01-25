@@ -87,9 +87,9 @@ function premakni(st) {
         sgame=false;
     }
 
-    for (let i = 0; i != 4; i++) {
-        for (let j = 0; j != 4; j++) {
-            if (map[j][i] === st) {
+    for (let i=0;i!=4;i++){
+        for (let j=0;j!=4;j++){
+            if (map[j][i]===st){
                 x = j;
                 y = i;
                 break;
@@ -98,27 +98,27 @@ function premakni(st) {
     }
 
     // Preveri meje
-    if (x > 0 && map[x - 1][y] === 0) {
-        map[x - 1][y] = st;
-        map[x][y] = 0;
+    if (x>0 && map[x-1][y]===0){
+        map[x-1][y]=st;
+        map[x][y]=0;
         izpis();
     }
 
-    if (x < 3 && map[x + 1][y] === 0) {
-        map[x + 1][y] = st;
-        map[x][y] = 0;
+    if (x<3 && map[x+1][y]===0){
+        map[x+1][y]=st;
+        map[x][y]=0;
         izpis();
     }
 
-    if (y > 0 && map[x][y - 1] === 0) {
-        map[x][y - 1] = st;
-        map[x][y] = 0;
+    if (y>0 && map[x][y-1]===0){
+        map[x][y-1]=st;
+        map[x][y]=0;
         izpis();
     }
 
-    if (y < 3 && map[x][y + 1] === 0) {
-        map[x][y + 1] = st;
-        map[x][y] = 0;
+    if (y<3 && map[x][y+1]===0){
+        map[x][y+1]=st;
+        map[x][y]=0;
         izpis();
     }
 
@@ -168,14 +168,14 @@ function ende(){
 }
 
 function pregled(mapa,cilj){
-    for (let i = 0; i < mapa.length; i++) {
-        for (let j = 0; j < mapa[i].length; j++) {
-            if (mapa[i][j] !== cilj[i][j]) {
-                return false; // Če najdemo vsaj eno razliko, igra ni končana
+    for (let i=0;i<mapa.length;i++) {
+        for (let j=0;j<mapa[i].length;j++) {
+            if (mapa[i][j]!==cilj[i][j]) {
+                return false;
             }
         }
     }
-    return true; // Če smo pregledali celotno matriko in ni razlik, igra je končana
+    return true;
 }
 
 nakljucno()
