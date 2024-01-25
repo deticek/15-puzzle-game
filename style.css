@@ -33,3 +33,9 @@ button{
     font-size: x-large;
     margin: 10px;
 }
+
+#res{
+    width: 100%;
+    background: #000;
+    color: white;
+}
