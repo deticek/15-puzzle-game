@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+
+#map{
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left:25%;
+    height: 500px;
+    width:500px;
+    transform: translate(25%, -50%);
+}
+
+button{
+    width: 25%;
+    height: 25%;
+    float:left;
+    background-color: blue;
+    color: white;
+    font-size: xx-large;
+}
+
+#show{
+    position: absolute;
+    margin: 10px;
+    border:2px solid black;
+    padding: 10px;
+    width: 350px;
+}
+
+#time, #stpotez{
+    font-size: x-large;
+    margin: 10px;
+}
